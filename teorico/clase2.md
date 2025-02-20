@@ -90,3 +90,60 @@ $$
 
 Pero $B\neq (I)$, entonces esto es absurdo.
 
+## Valores y vectores propios
+
+### Definición
+
+Sea $V$ un espacio vectorial sobre $\mathbb{K}\mid(\mathbb{R}$ o $\mathbb{C})$ y una transformación lineal $T:V\to V$. Decimos que un vector $v \in V, v\neq \vec{0}$ es **vector propio** de $T$ si existe $\lambda\in\mathbb{K}$ tal que:
+
+$$T(v) = \lambda v$$
+
+Decimos que $v$ es un vector propio asociado al valor propio $\lambda$
+
+#### Ejemplo
+
+Sea $T:\mathbb{R}^2\to\mathbb{R}^2$ definida por $T(x,y) = (-2x+y, 6x-y)$. Veamos que se cumple que:
+
+- $T(1,3) = (1,3)$
+- $T(1,-2) = (-4, 8) = (-4)(1,-2)$
+
+Entonces:
+
+- $(1,3)$ es **vep** de $T$ asociado a $\lambda=1$
+- $(1,-2)$ es **vep** de $T$ asociado a $\lambda=-4$
+
+### Definición (subespacio propio)
+
+Sea $T:V\to V$ un operador líneal, con $\lambda$ un valor propio de $T$. Se define el subespacio propio asociado a $\lambda$ de la siguiente forma:
+
+$$S_\lambda = \{v\in V: T(v) = \lambda v\}$$
+
+#### Proposición
+
+$S_\lambda$ es un subespacio vectorial de $V$
+
+##### Demostración
+
+- $\vec{0}\in S_\lambda\quad(S_\lambda\neq\emptyset)$
+- Si $v\in S_\lambda, \alpha\in\mathbb{K}$ entonces $T(\alpha v) = \alpha T(v) = \alpha\lambda v = \lambda(\alpha v)$. Entonces $\alpha v\in S_\lambda$
+- Si $v,w\in S_\lambda$ entonces: $T(v+w) = T(v) + T(w) = \lambda v + \lambda w= \lambda(v+w)$. Entonces $(v+w)\in S_\lambda$
+
+Entonces $S_\lambda$ es un subespacio vectorial de $V$
+
+#### Observación
+
+$S_\lambda = Ker(T-\lambda\mathbb{I})$
+
+##### Demostración
+
+Tenemos que:
+
+$$
+\begin{align*}
+&v\in S_\lambda \iff\\
+&T(v) = \lambda v \iff\\
+&T(v)-\lambda v = 0 \iff\\
+&(T-\lambda\mathbb{I})(v) = 0 \iff\\
+&v\in Ker(T-\lambda\mathbb{I})
+\end{align*}
+$$
