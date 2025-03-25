@@ -22,7 +22,7 @@ Veamos cuales son los círculos de Gershgorin:
 
 Veamos como se ve gráficamente para determinar si hay intersección entre los círculos:
 
-![Figura 1](images/ej5fig1.png)
+![Figura 1](../images/ej5fig1.png)
 
 Entonces, usando el gráfico podemos determinar que:
 

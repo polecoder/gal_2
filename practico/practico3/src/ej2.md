@@ -33,7 +33,7 @@ Formalmente, podemos expresarlos como:
 
 Gráficamente se verían algo así:
 
-![Figura 1](images/ej2fig1.png)
+![Figura 1](../images/ej2fig1.png)
 
 El teorema de Gershgorin nos dice que al ser todos disjuntos, tenemos un único valor propio por círculo, por lo que $A$ tiene $4$ valores propios distintos, por lo que es diagonalizable.
 Además, podemos concluir que los valores propios son todos reales, ya que de otra manera tendríamos dos raíces conjugadas en un mismo círculo.
